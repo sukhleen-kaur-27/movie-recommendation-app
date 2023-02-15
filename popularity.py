@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-
+@st.cache_data()
 def app(top_20_popular):
 	st.header("Movie Recommedation System")
 	st.subheader("Recommedation based on Popularity : ")
