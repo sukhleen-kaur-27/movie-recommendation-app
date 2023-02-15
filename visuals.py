@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
-@st.cache_data()
+@st.cache(allow_output_mutation= True)
 def app(genre_table, top_20_popular):
 	st.subheader("Top 20 Popular Movies")
 	plt.figure(figsize = (12, 6))
