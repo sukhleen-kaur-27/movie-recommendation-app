@@ -1,9 +1,9 @@
 import streamlit as st
-@st.cache(allow_output_mutation= True)
+@st.cache(suppress_st_warning=True)
 def genre_recommender(fav_genre, genre_based_df):
   	recommended_df = genre_based_df[genre_based_df['genres'] == fav_genre]
   	return(recommended_df.head(25))
-@st.cache(allow_output_mutation= True)
+@st.cache(suppress_st_warning=True)
 def app(genre_based_df, genre_table):
 	st.header("Popular Movies based in Genre")
 	st.text("")
