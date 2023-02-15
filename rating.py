@@ -1,5 +1,5 @@
 import streamlit as st
-@st.cache(suppress_st_warning=True)
+
 def app(qualified_movies_df):
 	st.header("Movies based on Rating using Weighted Rating")
 	qualified_movies_df.sort_values(by= 'weighted_rating', ascending = False, inplace = True)
