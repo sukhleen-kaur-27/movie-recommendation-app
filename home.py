@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 def recommend_movies(movie_name, similarity_df, all_movies_ratings):
   similar_movies = similarity_df[str(movie_name).title()]
