@@ -8,7 +8,7 @@ def app(genre_based_df, genre_table):
 	st.header("Popular Movies based in Genre")
 	st.text("")
 	st.subheader("Top 3 Popular genres :")
-	beta_col1, beta_col2, beta_col3=st.beta_columns(3)
+	beta_col1, beta_col2, beta_col3=st.columns(3)
 	with beta_col1:
 		st.write(genre_table["genres"][0])
 	with beta_col2:
